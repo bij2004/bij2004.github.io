@@ -1,0 +1,551 @@
+html,body {
+		height: 100%;
+		font-family: 'Montserrat';
+
+	}
+
+	body{
+	
+ 	background-color:#F9FFE8; 
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	margin:0;
+
+	}
+
+	.responsive {
+	width: 100%;
+	height: auto;
+
+	}
+
+	.homelogo{
+		width: 211px;
+		height: 144px;
+		position: absolute;
+		left: 82px;
+		top: -5px;
+
+	}
+
+	h1 {
+	text-align: center;
+	font-size: 30px;
+	color:#FE5F55;
+	top: 172px;
+	line-height: 40px;
+	
+	}
+
+	p{
+		Text-align: center;
+		color: #516365;
+		font-size: 18px;
+		line-height: 24px;
+		width:326px;
+		position:absolute;
+		left:-51px;
+		
+	}
+
+	.casual {
+		font-size: 16px;
+		text-align: center;
+		color: white;
+		background-color: #7A9E9F;
+		width: 174px;
+		position: absolute;
+		top: 400px;
+		left: 100px;
+		filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+		padding: 5px;
+		text-decoration: none;
+
+	}
+
+	.dressycasual{
+		font-size: 16px;
+		text-align: center;
+		color: white;
+		background-color: #7A9E9F;
+		width: 174px;
+		position: absolute;
+		top: 450px;
+		left: 100px;
+		filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+		padding: 5px;
+		text-decoration: none;
+
+	}
+	
+	.workattire{
+		font-size: 16px;
+		text-align: center;
+		color: white;
+		background-color: #7A9E9F;
+		width: 174px;
+		position: absolute;
+		top: 500px;
+		left: 100px;
+		filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+		padding: 5px;
+		text-decoration: none;
+	}
+
+	.activewear{
+		font-size: 16px;
+		text-align: center;
+		color: white;
+		background-color: #7A9E9F;
+		width: 174px;
+		position: absolute;
+		top: 550px;
+		left: 100px;
+		filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+		padding: 5px;
+		text-decoration: none;
+	}
+
+	.formalattire{
+		font-size: 16px;
+		text-align: center;
+		color: white;
+		background-color: #7A9E9F;
+		width: 174px;
+		position: absolute;
+		top: 600px;
+		left: 100px;
+		filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+		padding: 5px;
+		text-decoration: none;
+	}
+	
+	.nav-container{
+		max-width: 100%;
+		
+	}
+.bottomdesignpages{
+		height: 300px;
+ 		background-image: url(images/bottomdesign.png);
+ 		background-repeat: no-repeat;
+ 		background-size: cover;
+ 		background-position: 0 -162px;
+ 		position:  absolute;
+ 		bottom: -145px;
+ 		width: 100%;
+
+ 		
+ 	}
+
+   
+ .homebutton {
+		top: 132px;
+		left: 13px;
+		width:75px;
+		height: auto;
+		position: absolute;
+		filter: drop-shadow(0px 1px 1.5px rgba(0, 0, 0, 0.1));
+	}
+
+	.closetbutton{
+		top: 750px;
+		width: 72px;
+		height: auto;
+		left: 83px;
+		position: absolute;
+	}
+
+	.camerabutton{
+		top: 750px;
+		width: 46px;
+		height: auto;
+		left: 250px;
+		position: absolute;
+
+	}
+	
+h2{
+	color: #FE5F55;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	font-family: 'Montserrat';
+	height:60px;
+	position:absolute;
+	top:159px;
+	
+}
+
+.shufflebutton{
+		font-size: 16px;
+		text-align: center;
+		color: white;
+		background-color: #FE5F55;
+		width: 115px;
+		position: absolute;
+		top: 667px;
+		left: 52px;
+		filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+		padding: 5px;
+		 border-radius: 4px;
+		 text-decoration: none;
+		
+
+	}
+
+
+	
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+
+.section {
+	positon:absolute;
+	display:block;
+
+}
+
+.carousel {
+  width: 124px;
+  height: 118px;
+  position: relative;
+  left:135px;
+  top:221px;
+  margin-bottom: 20px;
+  
+}
+
+.carousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+ 	
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, .5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid darkorange;
+}
+
+.carousel-button.prev {
+  left: -2rem;
+}
+
+.carousel-button.next {
+  right: -2rem;
+}
+
+.bottoms{
+	top:100px;
+}
+
+.closetbg{
+	position:absolute;
+	width:636px;
+	top:-250px;
+	left:-126px;
+}
+
+.confetti-button {
+    font-family: 'Montserrat';
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px;
+    appearance: none;
+    background-color: #fe5f55;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+    text-transform: uppercase;
+    top: 667px;
+	left: 136px;
+	width:115px;
+}
+
+.confetti-button:focus {
+    outline: 0;
+}
+
+.confetti-button:before, .confetti-button:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+}
+
+.confetti-button:before {
+    display: none;
+    top: -75%;
+    background-image: radial-gradient(circle, #0146F8 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #0146F8 20%, transparent 30%),
+    radial-gradient(circle, #0146F8 20%, transparent 20%),
+    radial-gradient(circle, #0146F8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #0146F8 15%, transparent 20%),
+    radial-gradient(circle, #0146F8 20%, transparent 20%),
+    radial-gradient(circle, #0146F8 20%, transparent 20%),
+    radial-gradient(circle, #0146F8 20%, transparent 20%),
+    radial-gradient(circle, #0146F8 20%, transparent 20%);
+    background-size: 10% 10%,
+    20% 20%,
+    15% 15%,
+    20% 20%,
+    18% 18%,
+    10% 10%,
+    15% 15%,
+    10% 10%,
+    18% 18%;
+}
+
+.confetti-button:after {
+    display: none;
+    bottom: -75%;
+    background-image: radial-gradient(circle, #ffa946 20%, transparent 20%),
+    radial-gradient(circle, #ffa946 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #ffa946 15%, transparent 20%),
+    radial-gradient(circle, #ffa946 20%, transparent 20%),
+    radial-gradient(circle, #ffa946 20%, transparent 20%),
+    radial-gradient(circle, #ffa946 20%, transparent 20%),
+    radial-gradient(circle, #ffa946 20%, transparent 20%);
+    background-size: 15% 15%,
+    20% 20%,
+    18% 18%,
+    20% 20%,
+    15% 15%,
+    10% 10%,
+    20% 20%;
+}
+
+.confetti-button:active {
+    transform: scale(0.9);
+    background-color: #ffa130;
+    box-shadow: 0 2px 25px rgba(255, 215, 52, 0.2);
+}
+
+.confetti-button.animate:before {
+    display: block;
+    animation: topBubbles ease-in-out 0.75s forwards;
+}
+
+.confetti-button.animate:after {
+    display: block;
+    animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+@keyframes topBubbles {
+    0% {
+        background-position: 5% 90%,
+        10% 90%,
+        10% 90%,
+        15% 90%,
+        25% 90%,
+        25% 90%,
+        40% 90%,
+        55% 90%,
+        70% 90%;
+    }
+    50% {
+        background-position: 0 80%,
+        0 20%,
+        10% 40%,
+        20% 0,
+        30% 30%,
+        22% 50%,
+        50% 50%,
+        65% 20%,
+        90% 30%;
+    }
+    100% {
+        background-position: 0 70%,
+        0 10%,
+        10% 30%,
+        20% -10%,
+        30% 20%,
+        22% 40%,
+        50% 40%,
+        65% 10%,
+        90% 20%;
+        background-size: 0 0,
+        0 0,
+        0 0,
+        0 0,
+        0 0,
+        0 0;
+    }
+}
+
+@keyframes bottomBubbles {
+    0% {
+        background-position: 10% -10%,
+        30% 10%,
+        55% -10%,
+        70% -10%,
+        85% -10%,
+        70% -10%,
+        70% 0;
+    }
+    50% {
+        background-position: 0 80%,
+        20% 80%,
+        45% 60%,
+        60% 100%,
+        75% 70%,
+        95% 60%,
+        105% 0;
+    }
+    100% {
+        background-position: 0 90%,
+        20% 90%,
+        45% 70%,
+        60% 110%,
+        75% 80%,
+        95% 70%,
+        110% 10%;
+        background-size: 0 0,
+        0 0,
+        0 0,
+        0 0,
+        0 0,
+        0 0;
+    }
+}
+
+
+
+
+
+.wrapper {
+	margin: 30px;
+}
+ 
+.button {
+	border-radius: 12px;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 2px 20px;
+	color: black;
+
+}
+ 
+.button:hover {
+	background-color: black;
+	color: white;
+}
+ 
+.opencam {
+	background-color: #9dbdc3;
+	position:absolute;
+	top:654px;
+	left:127px;
+	color:white;
+	filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+}
+ 
+.closecam {
+	background-color: red;
+	display: none;
+	position:absolute;
+	top:544px;
+}
+ 
+.buttonsnap {
+
+	position:absolute;
+	width:62px;
+	height:120px;
+	top:645px;
+	left:44px;
+	filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+}
+ 
+.wrap {
+	margin-top: 30px;
+}
+ 
+video, canvas {
+	width: 261px;
+	height: 219px;
+	background-color: rgb(0 0 0 / 5%);
+	position:relative;
+	top:161px;
+	left:30px;
+}
+
+.closebutton{
+	position:absolute;
+	top:175px;
+	left:32px;
+	width:61px;
+	height:120px;
+	filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
+}
+
+.uploadbutton{
+	position:absolute;
+	top:646px;
+	left:275px;
+	width:61px;
+	height:120px;
+	filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.25));
+}
+
+.shirt { 
+	position:absolute;
+	top:421px;
+	left:71px;
+	width:100%;
+
+}
